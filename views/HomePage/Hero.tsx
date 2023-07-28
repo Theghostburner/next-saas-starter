@@ -7,6 +7,7 @@ import HeroIllustration from 'components/HeroIllustation';
 import OverTitle from 'components/OverTitle';
 import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
+import Link from 'next/link';
 
 export default function Hero() {
   const { setIsModalOpened } = useNewsletterModalContext();
@@ -14,16 +15,19 @@ export default function Hero() {
   return (
     <HeroWrapper>
       <Contents>
-        <CustomOverTitle>the coolest, saas product you have ever seen</CustomOverTitle>
-        <Heading>Make your life easier with our SaaS</Heading>
+        <CustomOverTitle>"The most efficient way to learn tech"</CustomOverTitle>
+        <Heading>Upskill with Skille</Heading>
         <Description>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, tempora qui. Explicabo voluptate iure ipsum molestias
-          repudiandae perspiciatis nostrum praesentium, unde pariatur tempora magni rem. Necessitatibus facilis obcaecati ratione.
+          Skille lets you learn anything "tech" within your timeframe and with small tasks each day.
         </Description>
         <CustomButtonGroup>
-          <Button onClick={() => setIsModalOpened(true)}>
-            Subscribe to the newsletter <span>&rarr;</span>
-          </Button>
+        <Link href="/actualApp">
+      <a>
+        <Button>
+          Try it out for free! <span>&rarr;</span>
+        </Button>
+      </a>
+    </Link>
           <NextLink href="#whitepaper" passHref>
             <Button transparent>
               Features <span>&rarr;</span>

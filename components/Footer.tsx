@@ -21,29 +21,30 @@ const footerItems: FooterItems = [
     title: 'Product',
     items: [
       { title: 'Features', href: '/features' },
-      { title: 'Something', href: '/something' },
-      { title: 'Something else', href: '/something-else' },
-      { title: 'And something else', href: '/and-something-else' },
+      { title: 'Pricing', href: '/pricing' },
+      { title: 'Try for free', href: '/actualApp' },
+      { title: 'Workshops', href: '/workshop' },
+      // { title: 'And something else', href: '/and-something-else' },
     ],
   },
   {
-    title: 'Knowledge',
+    title: 'Social',
     items: [
-      { title: 'Blog', href: '/blog' },
-      { title: 'Contact', href: '/contact' },
-      { title: 'FAQ', href: '/faq' },
-      { title: 'Help Center', href: '/help-center' },
+      { title: 'Linkedin', href: '/blog' },
+      { title: 'Instagram', href: '/contact' },
+      { title: 'Facebook', href: '/faq' },
+      // { title: 'Help Center', href: '/help-center' },
     ],
   },
-  {
-    title: 'Something',
-    items: [
-      { title: 'Features2', href: '/features2' },
-      { title: 'Something2', href: '/something2' },
-      { title: 'Something else2', href: '/something-else2' },
-      { title: 'And something else2', href: '/and-something-else2' },
-    ],
-  },
+  // {
+  //   title: 'Something',
+  //   items: [
+  //     { title: 'Features2', href: '/features2' },
+  //     { title: 'Something2', href: '/something2' },
+  //     { title: 'Something else2', href: '/something-else2' },
+  //     { title: 'And something else2', href: '/and-something-else2' },
+  //   ],
+  // },
 ];
 
 export default function Footer() {
@@ -69,13 +70,14 @@ export default function Footer() {
               </a>
             </NextLink>
 
-            <NextLink href="https://www.linkedin.com/my-saas-startup" passHref>
+            <NextLink href="https://www.linkedin.com/company/91331767" passHref>
               <a>
                 <LinkedinIcon size={50} round={true} />
               </a>
             </NextLink>
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
+          <Copyright>&copy; Copyright 2023 ProtoVault Private Limited 
+          </Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>

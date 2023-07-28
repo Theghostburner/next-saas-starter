@@ -10,25 +10,25 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'Search for any tech topic or skill',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>Search for anything, mention your goal for learning and get a comprehensive learning plan tailored specifically for your needs!</p>',
     imageUrl: '/demo-illustration-3.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Get real-time feedback',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>Our adaptive AI algorithm tracks your progress and adapts accordingly, so that you are always ahead of your competetion</p>',
     imageUrl: '/demo-illustration-4.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'Schedule meetings with your mentors',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
+      '<p>Mentors will help you achieve your goals faster, mentorship is the best way to build lasting connection. </p>',
     imageUrl: '/demo-illustration-5.png',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
@@ -74,16 +74,19 @@ export default function FeaturesGallery() {
   }
 
   return (
-    <FeaturesGalleryWrapper>
-      <Content>
-        <OverTitle>features</OverTitle>
-        <SectionTitle>What are you signing in for?</SectionTitle>
-      </Content>
-      <GalleryWrapper>
-        <TabsContainer>{tabsMarkup}</TabsContainer>
-        {imagesMarkup}
-      </GalleryWrapper>
-    </FeaturesGalleryWrapper>
+    <div>
+      
+    </div>
+    // <FeaturesGalleryWrapper>
+    //   <Content>
+    //     <OverTitle>features</OverTitle>
+    //     <SectionTitle>What are you signing in for?</SectionTitle>
+    //   </Content>
+    //   <GalleryWrapper>
+    //     <TabsContainer>{tabsMarkup}</TabsContainer>
+    //     {imagesMarkup}
+    //   </GalleryWrapper>
+    // </FeaturesGalleryWrapper>
   );
 }
 

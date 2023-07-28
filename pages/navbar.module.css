@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff2) format("woff2"),
+      url(https://cdn.openai.com/API/fonts/ColfaxAIRegular.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: "ColfaxAI";
+    src: url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff2) format("woff2"),
+      url(https://cdn.openai.com/API/fonts/ColfaxAIBold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-family: "ColfaxAI", Helvetica, sans-serif;
+    margin: 0;
+    padding: 5px;
+  }
+  
+  .navbar img {
+    height: 80px;
+    width: 80px;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-left: 50px;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .navbarLinks {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .navbarLinks li {
+    margin-left: 10px;
+  }
+  
+  .navbarLinks li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbarLinks a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin: 40px;
+  }
+  
+  .navbarLinks a:hover {
+    color: #ddd;
+  }
+  

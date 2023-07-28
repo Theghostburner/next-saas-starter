@@ -69,7 +69,9 @@ export default function Navbar({ items }: NavbarProps) {
       <Content>
         <NextLink href="/" passHref>
           <LogoWrapper>
-            <Logo />
+            <h1>Skille AI</h1>
+            {/* <img src='/skille_logo_transperant.png' style={{ width: '8%' }} /> */}
+            {/* <Logo /> */}
           </LogoWrapper>
         </NextLink>
         <NavItemList>

@@ -6,26 +6,25 @@ import ButtonGroup from 'components/ButtonGroup';
 import Container from 'components/Container';
 import OverTitle from 'components/OverTitle';
 import SectionTitle from 'components/SectionTitle';
+import { useNewsletterModalContext } from 'contexts/newsletter-modal.context';
 import { media } from 'utils/media';
 
 export default function Cta() {
+  const { setIsModalOpened } = useNewsletterModalContext();
   return (
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          {/* <OverTitle>Lorem ipsum dolor sit amet</OverTitle> */}
+          <SectionTitle>Can't wait to start learning ?</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            Subscribe to participate in our beta test and for weekly updates from Skille
           </Description>
           <ButtonGroup>
-            <NextLink href="#early-access" passHref>
-              <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
+              <Button onClick={() => setIsModalOpened(true)}>
+                Subscribe to our beta <span>&rarr;</span>
               </Button>
-            </NextLink>
-            <NextLink href="#whitepaper" passHref>
+            <NextLink href="/features" passHref>
               <OutlinedButton transparent>
                 Features <span>&rarr;</span>
               </OutlinedButton>

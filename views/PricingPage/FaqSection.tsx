@@ -6,33 +6,32 @@ export default function FaqSection() {
   return (
     <Wrapper>
       <SectionTitle>Frequently asked question</SectionTitle>
-      <Accordion title="Eiusmod eu laboris qui minim incididunt et id in elit veniam Lorem nulla ullamco.">
-        Voluptate ad aliquip in adipisicing incididunt officia. Aliqua consectetur id commodo fugiat sunt dolor minim. Aliqua ut deserunt
-        sit irure tempor esse labore elit commodo pariatur in nisi minim culpa. Exercitation eu in mollit tempor cillum excepteur
-        adipisicing cillum do et dolor est deserunt dolor. Deserunt reprehenderit nulla commodo quis et consectetur deserunt ea eiusmod
-        reprehenderit aliqua. Cupidatat commodo do ad ullamco ad enim sint sint irure amet culpa. Consequat sit Lorem sint culpa.
+      <Accordion title="What is Skille?">
+      Skille is an innovative and personalized learning platform designed for tech students and developers. It offers custom learning plans, hands-on projects, and adaptive intelligence to accelerate skill development and foster practical understanding.
       </Accordion>
-      <Accordion title="Minim eiusmod aliquip in ea mollit fugiat ullamco veniam enim sint exercitation.">
-        Lorem laboris ullamco labore consectetur duis amet excepteur esse labore sunt pariatur do aliqua amet. Enim exercitation labore
-        nostrud consectetur veniam eiusmod pariatur do commodo dolore pariatur amet veniam. Irure do et ut dolor quis reprehenderit anim
-        aute sint deserunt tempor sunt nostrud. Deserunt et aute non dolor.
+      <Accordion title="How does Skille work?">
+      Skille allows users to create a personalized learning plan based on their preferences and time constraints. The platform offers curated resources and practical projects to enhance learning outcomes. Its adaptive intelligence provides targeted recommendations and challenges to optimize the learning experience.
       </Accordion>
-      <Accordion title="Commodo officia dolore anim occaecat.">
-        Enim ea cillum pariatur incididunt incididunt sunt ea exercitation nisi aliquip. Cillum deserunt ut esse Lorem non qui labore labore
-        eiusmod magna incididunt ut quis. Nulla excepteur adipisicing ipsum do non occaecat.
+      <Accordion title="What sets Skille apart from other learning platforms?">
+      Skille stands out with its adaptive learning approach, tailored curriculum, and gamified reward system that keeps learners engaged. It offers a comprehensive library of curated content and specialized certified courses, making it a unique and comprehensive learning solution.
       </Accordion>
-      <Accordion title="Irure Lorem proident esse enim.">
-        Ipsum laboris sit minim occaecat nisi qui. Tempor eiusmod fugiat occaecat labore. Exercitation do cillum cillum laborum velit
-        laborum ea magna duis laborum in anim. Enim laboris dolore laboris consectetur enim duis deserunt consequat excepteur ipsum
-        excepteur. Non dolor magna et est cillum sint eiusmod sit eiusmod veniam id. Aliqua non non labore amet laborum fugiat ad nostrud ex
-        officia exercitation.
+      <Accordion title="Can Skille be used by beginners and advanced learners alike?">
+      Absolutely! Skille caters to learners of all proficiency levels. The platform adapts to each user's learning pace and provides content ranging from foundational to advanced levels, making it suitable for beginners and experienced tech enthusiasts alike.
       </Accordion>
-      <Accordion title="Ea quis consequat sunt sint aute pariatur aliquip minim voluptate.">
-        Sint eiusmod aute nulla ut esse sunt fugiat nulla exercitation duis pariatur. Magna anim incididunt magna id quis irure laborum sint
-        voluptate tempor esse elit dolore. Elit exercitation pariatur adipisicing aute. Nisi deserunt enim consequat anim adipisicing
-        laborum sint occaecat elit. Consequat officia cupidatat magna incididunt nisi in sunt duis reprehenderit ullamco in amet cillum.
-        Dolor nisi proident ipsum aute velit aliquip magna fugiat reprehenderit. Enim ex aliqua et velit exercitation reprehenderit veniam
-        do eu exercitation ad duis.
+      <Accordion title="Are the courses on Skille self-paced?">
+      Yes, courses on Skille are designed to be self-paced. Users can select their preferred timeline and adjust their learning journey based on their availability and pace.
+      </Accordion>
+      <Accordion title="How does Skille ensure the quality of its content?">
+      Skille carefully curates its content from reputable and reliable sources, ensuring that users have access to high-quality and up-to-date learning resources. The platform continuously updates its content to reflect the latest industry trends and advancements. 
+      </Accordion>
+      <Accordion title="Does Skille offer any certification upon course completion?">
+      Yes, Skille provides specialized certified courses from major universities, academies, and companies. Users receive certifications upon successfully completing these courses, adding value to their skillset and credentials. 
+      </Accordion>
+      <Accordion title="How can I access Skille's mentorship program?">
+      Skille's mentorship program connects users with industry-leading tech professionals from IITs. Users can gain personalized guidance, career advice, and insights into the tech industry through this program.  
+      </Accordion>
+      <Accordion title="What is the cost of using Skille?">
+      Skille offers both free and paid plans. Users can access a variety of free learning resources, while premium features and certified courses are available through paid subscriptions. Pricing details can be found on our website.
       </Accordion>
     </Wrapper>
   );

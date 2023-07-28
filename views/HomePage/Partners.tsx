@@ -18,29 +18,37 @@ const PARTNER_LOGOS = [
 
 export default function Partners() {
   return (
-    <PartnersWrapper>
-      <Title>official partners with</Title>
-      <Swiper
-        modules={[Autoplay]}
-        slidesPerView={6}
-        spaceBetween={30}
-        loop={true}
-        autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false, waitForTransition: false, stopOnLastSlide: false }}
-        speed={3000}
-        breakpoints={{
-          320: { slidesPerView: 2 },
-          768: { slidesPerView: 4 },
-          1025: { slidesPerView: 6 },
-        }}
-        className="swiper-wrapper"
-      >
-        {PARTNER_LOGOS.map((logo) => (
-          <SwiperSlide key={logo}>
-            <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={128} height={128} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
-    </PartnersWrapper>
+    <div>
+      <div>
+        "         
+        
+        
+        "
+      </div>
+    </div>
+    // <PartnersWrapper>
+    //   <Title>official partners with</Title>
+    //   <Swiper
+    //     modules={[Autoplay]}
+    //     slidesPerView={6}
+    //     spaceBetween={30}
+    //     loop={true}
+    //     autoplay={{ delay: 0, disableOnInteraction: false, pauseOnMouseEnter: false, waitForTransition: false, stopOnLastSlide: false }}
+    //     speed={3000}
+    //     breakpoints={{
+    //       320: { slidesPerView: 2 },
+    //       768: { slidesPerView: 4 },
+    //       1025: { slidesPerView: 6 },
+    //     }}
+    //     className="swiper-wrapper"
+    //   >
+    //     {PARTNER_LOGOS.map((logo) => (
+    //       <SwiperSlide key={logo}>
+    //         <NextImage src={'/partners/' + logo} alt={normalizePartnerLogoName(logo)} width={128} height={128} />
+    //       </SwiperSlide>
+    //     ))}
+    //   </Swiper>
+    // </PartnersWrapper>
   );
 }
 

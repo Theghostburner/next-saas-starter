@@ -26,31 +26,34 @@ export default function ScrollableBlogPosts({ posts }: ScrollableBlogPostsProps)
   }, []);
 
   return (
-    <Section>
-      <Container>
-        <Content>
-          <OverTitle>features</OverTitle>
-          <SectionTitle>What are you signing in for?</SectionTitle>
-        </Content>
-      </Container>
+    <div>
+      
+    </div>
+    // <Section>
+    //   <Container>
+    //     <Content>
+    //       <OverTitle>features</OverTitle>
+    //       <SectionTitle>What are you signing in for?</SectionTitle>
+    //     </Content>
+    //   </Container>
 
-      <SwiperContainer ref={ref}>
-        {hasMounted && (
-          <Swiper modules={[A11y]} slidesPerView={noOfItems} spaceBetween={10} loop>
-            {posts.map((singlePost, idx) => (
-              <SwiperSlide key={singlePost.meta.title}>
-                <ArticleCard
-                  title={singlePost.meta.title}
-                  description={singlePost.meta.description}
-                  imageUrl={singlePost.meta.imageUrl}
-                  slug={singlePost.slug}
-                />
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        )}
-      </SwiperContainer>
-    </Section>
+    //   <SwiperContainer ref={ref}>
+    //     {hasMounted && (
+    //       <Swiper modules={[A11y]} slidesPerView={noOfItems} spaceBetween={10} loop>
+    //         {posts.map((singlePost, idx) => (
+    //           <SwiperSlide key={singlePost.meta.title}>
+    //             <ArticleCard
+    //               title={singlePost.meta.title}
+    //               description={singlePost.meta.description}
+    //               imageUrl={singlePost.meta.imageUrl}
+    //               slug={singlePost.slug}
+    //             />
+    //           </SwiperSlide>
+    //         ))}
+    //       </Swiper>
+    //     )}
+    //   </SwiperContainer>
+    // </Section>
   );
 }
 

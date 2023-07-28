@@ -7,37 +7,29 @@ import SectionTitle from 'components/SectionTitle';
 export default function PricingTablesSection() {
   return (
     <Wrapper>
-      <SectionTitle>Flexible pricing for agile teams</SectionTitle>
+      <SectionTitle>Flexible pricing options</SectionTitle>
       <AutofitGrid>
         <PricingCard
           title="free"
           description="Give us a try for free"
-          benefits={['1 seat', '1 active project', 'Ulimited viewers', '10 blocks']}
+          benefits={['Learn anything', 'Daywise Todos', 'Days Limit - 10']}
         >
           $0<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Starter"
-          description="Best for individual desginers"
-          benefits={['1 seat', '3 active project', 'Ulimited viewers', '100 blocks', 'CSV Downloader', 'Password protection']}
+          title="Skille Plus"
+          description="Best for students"
+          benefits={['Learn anything', 'Daywise Todos', 'Days Limit - 30/month','Dedicated Mentor','Access to skille community','Job referrals']}
           isOutlined
         >
-          $29<span>/month</span>
+          $10<span>/month</span>
         </PricingCard>
         <PricingCard
-          title="Premium"
-          description="Get your team together"
-          benefits={[
-            '10 seat',
-            '10 active project',
-            'Ulimited viewers',
-            'Unlimited blocks',
-            'CSV Downloader',
-            'Password protection',
-            'Customization',
-          ]}
+          title="Skille Gold"
+          description="Best for developers"
+          benefits={['Learn anything', 'Daywise Todos', 'Days Limit - 30/month','Dedicated Mentor', 'Access to skille community','Job referrals','Adaptive AI support','on demand scalable projects']}
         >
-          $79<span>/month</span>
+          $20<span>/month</span>
         </PricingCard>
       </AutofitGrid>
     </Wrapper>

@@ -27,25 +27,25 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
         <WhiteBackgroundContainer>
           <Hero />
           <Partners />
-          <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Hands On" overTitle="Learn anything with small tasks each day!">
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore
-              voluptate quo deleniti animi laboriosam.{' '}
-              <Link href="/help-center">Possimus ullam velit rem itaque consectetur, in distinctio?</Link> Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Soluta repellendus quia quos obcaecati nihil. Laudantium non accusantium, voluptate eum nesciunt
-              at suscipit quis est soluta?
+            Our platform takes learning to the next level by providing a unique hands-on approach. Learn by doing and gain practical skills through our curated tasks and projects. Get real-world experience and apply your knowledge in a practical setting.
             </p>
           </BasicSection>
-          <BasicSection imageUrl="/demo-illustration-2.svg" title="Lorem ipsum dolor sit." overTitle="lorem ipsum" reversed>
+          <BasicSection imageUrl="/demo-illustration-2.svg" title="Adaptive AI" overTitle="Not able to finish all tasks? We got your back!" reversed>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, quidem error incidunt a doloremque voluptatem porro inventore{' '}
-              <strong>voluptate quo deleniti animi laboriosam</strong>. Possimus ullam velit rem itaque consectetur, in distinctio?
+            Skillê leverages advanced AI algorithms to tailor your learning experience based on your unique needs and progress. Learn at your own pace, with content that adapts to your skill level and learning style.
             </p>
-            <ul>
-              <li>Professional point 1</li>
-              <li>Professional remark 2</li>
+            {/* <ul>
+              <li>Updates the content every day based on your progress.</li>
+              <li></li>
               <li>Professional feature 3</li>
-            </ul>
+            </ul> */}
+          </BasicSection>
+          <BasicSection imageUrl="/demo-illustration-1.svg" title="Get Mentorship!" overTitle="Mentors help you achieve your goal better!">
+            <p>
+            Our mentorship program connects you with professionals from top companies who have achieved remarkable success in their careers. Gain invaluable insights, career advice, and personalized support as you navigate your tech journey. Elevate your learning experience with mentorship that empowers you to thrive in the dynamic world of technology.      
+            </p>
           </BasicSection>
         </WhiteBackgroundContainer>
         <DarkerBackgroundContainer>
