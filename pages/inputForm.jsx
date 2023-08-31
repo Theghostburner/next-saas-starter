@@ -2,30 +2,18 @@ import { useState } from "react";
 import Question from "./question";
 import styles from './index.module.css';
 import DisplayContentButton from "./displayContent";
+import ButtonList from "./buttonList";
+import ContentBox from "./contentBox";
+import { ContentProvider } from './contentBox';
+import { multilineToArr,processArraySectionsOnly,segregateTextsByDays } from "./importantFunctions";
 
-function segregateTextsByDays(response) {
-  const convertedResponse = response.replace(/\n/g, '');
-  //console.log(convertedResponse);
-  console.log(response);
-  var stringifyResponse = convertedResponse.toString();
-  const dayRegex = /(day\s*\d+|Day\s*\d+\s*:|Day\s*\d+\s*-\s*|Day\s*\d+\s*-|day\s*\d+\s*:|day\s*\d+\s*-)\s*([\s\S]*?)(?=(day\s*\d+|Day\s*\d+\s*:|Day\s*\d+\s*-\s*|Day\s*\d+\s*-|day\s*\d+\s*:|day\s*\d+\s*-)|$)/gi;
-
-  const days = [];
-  let match;
-
-  while ((match = dayRegex.exec(response)) !== null) {
-    const content = match[2].trim();
-    days.push(content);
-  }
-
-  return days;
-}
 
 export default function InputForm() {
 
   const [contentArray,setContentArray] = useState([]);
   const [responseGet,setResponseGet] = useState(false);
   const [taskArray, setTaskArray] = useState([]);
+  const [newContent, setNewContent] = useState('Initial Content');
  
   const [inputData, setInputData] = useState({
     topic: "",
@@ -89,6 +77,7 @@ export default function InputForm() {
       const segregatedTexts = segregateTextsByDays(rawResult);
       console.log(segregatedTexts);
       setContentArray(segregatedTexts);
+
       
       }
       catch (error){
@@ -107,7 +96,7 @@ export default function InputForm() {
   }
 
   return (
-    <div className={styles.container}>
+    <div  className={`${styles.container} ${styles.scrollableContent}`}>
       <main className={styles.main}>
         {isLoading ? (
           <p>Loading...</p>
@@ -115,12 +104,12 @@ export default function InputForm() {
           <div>
             <h1>Follow this course to learn {inputData.topic}</h1>
             <div className={styles.contentContainer}>
+
               {contentArray.map((content, index) => (
-                <DisplayContentButton
+                <ButtonList
                   className="button"
-                  key={index}
-                  buttonLabel={`Day ${index + 1}`}
-                  content={(content)}
+                  items={processArraySectionsOnly(multilineToArr(content))}
+                  index={index+1}
                 />
               ))}
             </div>

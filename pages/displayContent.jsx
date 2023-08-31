@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useContent } from './contentBox';
 
 function multilineToArr(input) {
   // Split the input by newline characters to create an array of lines.
@@ -54,10 +55,16 @@ function processArray(inputArray) {
 }
 
 
-const DisplayContentButton = ({ buttonLabel, content }) => {
+const DisplayContentButton = ({ buttonLabel, content, updateContent }) => {
   const [showSections, setShowSections] = useState(false);
   const [selectedSection, setSelectedSection] = useState(null);
   const [selectedPart, setSelectedPart] = useState(null);
+
+  const { content1, updateContent1 } = useContent();
+
+  const handleContentChange = (newContent) => {
+    updateContent1(newContent);
+  };
   var multArr = multilineToArr(content);
 
   var result = processArray(multArr);
@@ -68,8 +75,9 @@ const DisplayContentButton = ({ buttonLabel, content }) => {
     setSelectedPart(null);
   };
 
-  const handlePartClick = (part) => {
+  const handlePartClick = (part,selectedSection) => {
     setSelectedPart(part);
+    handleContentChange(selectedSection)
   };
 
   const handleClick = () => {
@@ -78,16 +86,17 @@ const DisplayContentButton = ({ buttonLabel, content }) => {
     setSelectedPart(null);
   };
 
+
   return (
     <div>
       <button onClick={handleClick}>{buttonLabel}</button>
       {showSections && (
         <div>
-          <h2>Sections:</h2>
+          <h2>Tasks for the day:</h2>
           {sections.map((section, index) => (
             <div key={index}>
-              <button onClick={() => handleSectionClick(section)}>
-                {`Section ${index + 1}`}
+              <button className="Part_Button" onClick={() => handleSectionClick(section)}>
+                {`Part ${index + 1}`}
               </button>
             </div>
           ))}
@@ -95,10 +104,10 @@ const DisplayContentButton = ({ buttonLabel, content }) => {
       )}
       {selectedSection !== null && (
         <div>
-          <h2>Parts of {selectedSection}:</h2>
+          <h2>{selectedSection}:</h2>
           {parts[`parts_${sections.indexOf(selectedSection)}`]?.map((part, index) => (
             <div key={index}>
-              <button onClick={() => handlePartClick(part)}>
+              <button className='' onClick={() => handlePartClick(part,selectedSection)}>
                 Part {index + 1}
               </button>
             </div>

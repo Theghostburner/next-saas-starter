@@ -16,15 +16,15 @@ export default function Hero() {
     <HeroWrapper>
       <Contents>
         <CustomOverTitle>"The most efficient way to learn tech"</CustomOverTitle>
-        <Heading>Upskill with Skille</Heading>
+        <Heading>Learn for your own Goal</Heading>
         <Description>
-          Skille lets you learn anything "tech" within your timeframe and with small tasks each day.
+         Select from our list or explain your requirement, skille generates learning material based on latest context!
         </Description>
         <CustomButtonGroup>
         <Link href="/actualApp">
       <a>
         <Button>
-          Try it out for free! <span>&rarr;</span>
+          Join the revolution here! <span>&rarr;</span>
         </Button>
       </a>
     </Link>
