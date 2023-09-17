@@ -153,3 +153,19 @@ In
   align-items: center;
   height: 100vh;
 }
+.scrollableContent {
+  max-height: 30000px; /* Adjust the max height as needed */
+  overflow-y: auto;
+}
+.partButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+.partButton.active {
+  background-color: #ff5722; /* Change the active state background color as needed */
+}

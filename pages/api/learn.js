@@ -34,7 +34,8 @@ export default async function (req, res) {
   try {
     for (let i = 0; i < duration; i += 5) {
       prompt = updatePrompt(prompt, i,topic,duration);
-      console.log(prompt);
+      // console.log(prompt);
+      console.log("Making Course from day: "+i);
       completion = await openai.createCompletion({
         model: "text-davinci-003",
         prompt,
